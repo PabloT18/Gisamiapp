@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chris.gisamiapp.com.example.chris.gisamiapp.tematicas.TemAnticonActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            >
+
+            <WebView
+                android:id="@+id/mWebView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax"
+
+                />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:title="@string/recent_news"
+                app:layout_collapseMode="pin"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryText"
+                    android:text="Que son metodos Anticonceptivos"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_action_name"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryText"
+                        android:text="@string/publish_interp"
+                        android:layout_width="0dp"
+                        android:layout_weight="9"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.5"
+
+                    android:layout_marginTop="12dp"
+                    android:text="El método anticonceptivo es cualquier método usado para prevenir el embarazo. Otra forma de decir método anticonceptivo es anticoncepción.
+Si tiene relaciones sexuales sin métodos anticonceptivos, existe la posibilidad de que pudiera quedar embarazada. Esto es así incluso si aún no ha empezado a tener períodos menstruales o si se está acercando a la menopausia .
+La única forma segura de prevenir el embarazo es no tener relaciones sexuales. Pero encontrar un buen método anticonceptivo que pueda utilizar cada vez puede ayudarla a evitar un embarazo no planeado."
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.5"
+
+                    android:layout_marginTop="12dp"
+                    android:text="El mejor método anticonceptivo es el que la protege cada vez que tiene relaciones sexuales. Y con muchos tipos de métodos anticonceptivos, depende de lo bien que los use. Para encontrar un método que funcione para usted cada vez, algunas cosas a considerar incluyen:
+Su eficacia. Piense lo importante que es para usted evitar el embarazo. Luego vea la eficacia de cada método. Por ejemplo, si de todas formas planea tener un hijo pronto, es posible que no necesite un método muy confiable. Si no quiere tener hijos pero cree que no es correcto poner fin a un embarazo, elija un método anticonceptivo que funcione muy bien."
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:src="@drawable/ic_fav"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="6dp"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|right|end"
+        app:pressedTranslationZ="12dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>

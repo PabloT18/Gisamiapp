@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chris.gisamiapp.com.example.chris.gisamiapp.tematicas.TemEmbarzActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            >
+
+            <WebView
+                android:id="@+id/mWebView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax"
+
+                />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:title="Actividades de prevención antes del embarazo Vacunas y ácido fólico"
+                app:layout_collapseMode="pin"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryText"
+                    android:text="Actividades de prevención antes del embarazo Vacunas y ácido fólico"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_action_name"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryText"
+                        android:text="@string/publish_interp"
+                        android:layout_width="0dp"
+                        android:layout_weight="9"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.5"
+
+                    android:layout_marginTop="12dp"
+                    android:text="Para tener un bebé saludable, debe cuidar su propia salud también. Una de las cosas más importantes que puede hacer para prevenir defectos congénitos graves en su bebé es tomar la cantidad necesaria de ácido fólico todos los días, en especial antes de la concepción y durante la primera etapa del embarazo.
+                     Si fuma, es un buen momento para dejar de fumar. Si desea un embarazo, ahora tiene una doble razón, su salud y la de su bebé.
+                     Los productos químicos como pinturas, insecticidas, productos de limpieza, etc., pueden ser tóxicos.
+                     Lea las instrucciones de uso y consulte en caso de duda.
+                     Tome una dieta equilibrada. Si tiene exceso de peso, durante el embarazo, tendrá más riesgo de hipertensión arterial y diabetes, y el parto le será más difícil.
+                     Puede aprovechar este período previo al embarazo para bajar el peso, si lo necesita.
+                     Antes de tomar medicamentos debe consultar con su médico de familia o su farmacéutico.
+                     Si consume otras drogas, su bebé y usted necesitarán atención especial durante el embarazo y el parto.
+                     Solicite ayuda antes del embarazo para abandonar su consumo y así disminuir el riesgo de aborto y defectos en el bebé"
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.5"
+
+                    android:layout_marginTop="12dp"
+                    android:text="EL ÁCIDO FÓLICO
+                    Es una vitamina que se encuentra en algunas verduras
+(espinacas, brócoli, guisantes, espárragos), frutas
+(plátanos, naranjas), legumbres (lentejas, habas secas),
+frutos secos (cacahuetes) y algunas levaduras y pastas.
+Es importante para el buen desarrollo del sistema
+nervioso de su hijo.
+Durante el embarazo necesita un aporte mayor de
+ácido fólico.
+ Debe tomar un comprimido diario de 0,4-0,8 mg desde
+1 mes antes de que intente quedarse embarazada hasta
+el primer trimestre de embarazo.
+"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.5"
+
+                    android:layout_marginTop="12dp"
+                    android:text="VACUNACIÓN ANTES DEL EMBARAZO
+                   Revise su calendario de vacunas, es un buen momento para actualizarlo.
+                   Deben evitarse durante las primeras 14 semanas de embarazo.
+                    La protección adecuada del embarazo requiere: – Una dosis de vacuna antitetánica en los últimos 10 años. Recuerde que puede vacunarse inmediatamente antes o durante el embarazo
+                    Una dosis de vacuna para evitar la rubéola en cualquier momento de su vida, salvo que tenga seguridad de haber padecido la enfermedad. En caso de duda, puede confirmarse mediante análisis o puede volver a vacunarse. Es muy importante esperar 3 meses después de la vacuna para quedarse embarazada, así tendrá la seguridad completa de que la vacuna será inofensiva para el bebé.
+La vacuna contra la gripe está indicada en los mismos
+casos que en la mujer no embarazada.
+No son necesarias otras vacunas antes del embarazo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:src="@drawable/ic_fav"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="6dp"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|right|end"
+        app:pressedTranslationZ="12dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>
