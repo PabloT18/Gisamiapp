@@ -11,7 +11,7 @@ public class Util {
 
     //URL del Sitio Web primario de los WS para la aplicacion
     //public static final String URL_SRV = "http://192.168.0.107:8080/pedidos-jpa/srv/";
-    public static final String URL_SRV = "http://172.16.221.94:8080/SisGisab/srv/";
+    public static final String URL_SRV = "http://35.227.90.242:80/SisGisab/srv/";
     /**
      * Permite mostrar un mensaje Toast en pantalla,
      * @param id    ID de recurso String.xml
